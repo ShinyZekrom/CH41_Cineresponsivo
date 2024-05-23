@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Registro CineMix</title>
+    <style>
+        .grid-container>*{
+            text-align: center;
+            border-radius: 15px;
+            padding: 10px;
+        }
+        .header{
+            grid-area: header;
+        }
+        .navbar{
+            grid-area: navbar;
+        }
+
+    </style>
+</head>
+<body clas="grid-container">
+    <header>
+    <div class="banner">
+    </div>
+    </header>
+    <nav class="navbar">
+        <a href="./index.html" target="_blank">Inicio</a>
+        <a href="./index.html">Cartelera</a>
+        <a href="./formulario.html" target="_blank">Registrate</a>
+        <a href="./dulceria.html">Dulcería</a>
+    </nav>
+    <br>
+    <form action="">  <!--Formulario-->
+        <fieldset class="formularios" style="border: none;">
+            <div class="conteinerD"> <!--entradas de texto-->
+                <h3>Vamos a registrarnos</h3>
+                <label for="nombre">Ingresa tu nombre completo</label>
+                <input type="text"id="nombre"> <br>
+                <label for="correo">Ingresa tu e-mail</label>
+                <input type="email"id="correo"> <br>
+                <label for="telefono">Ingresa tu número de telefono con clave lada</label>
+                <input type="tel" id="telefono"> <br>
+                <label for="edad">Ingresa tu fecha de nacimiento</label>
+                <input type="date" id="edad"></label>
+                <h3>Genero</h3>
+                <div class="miniconteiner">
+                    <input type="radio" name="genero">
+                    <label for="hombre">Hombre</label> <br>
+                    <input type="radio" name="genero">
+                    <label for="mujer">Mujer</label> <br>
+                    <input type="radio" name="genero">
+                    <label for="Nodecir">Prefiero no decirlo</label> <br>
+                </div>
+            </div>
+        </fieldset>
+<!--Membresia-->
+        <fieldset class="formulariosM" style="border: none;">
+            <h3>¡Elige tu membresía!</h3>
+            <div class="conteinerM" >
+                <div>
+                    <img src="https://finanzasya.com.mx/wp-content/uploads/img-tarjeta-fan.png" alt="tarjeta 1">
+                    <br>
+                    <input type="radio" name="memebresia">
+                    <label for="Membredía Amigo"> Membresía Fan Amigo</label>
+                </div>
+                <div>
+                    <img src="https://media.megadescuentos.com/production/multimedia/338700665834fef53d9e.webp" alt="tarjeta 2">
+                    <br>
+                    <input type="radio" name="memebresia">
+                    <label for="Membredía Amigo"> Membresía Gran Amigo</label>
+        
+                </div>
+                <div>
+                    <img src="https://media.megadescuentos.com/production/multimedia/583819065834fef0c848.webp" alt="tarjeta 3">
+                    <br>
+                    <input type="radio" name="memebresia">
+                    <label for="Membredía Amigo"> Membresía Super Amigo</label>
+                </div>
+                <br>
+            </div>
+        </fieldset>
+
+        <fieldset class="formularios" style="border: none;"> <!--Generar un borde en la sección donde se coloque-->
+            <div class="infoextra">
+                <h3>Sube una foto a tus redes y llevate un cupon de descuento</h3>
+                <input type="file" id="foto"><br>
+                ¿Que tan propable es que nos recomiendes a un amigo?
+                <input type="range">
+                <br>
+                <h4>Elige tu cine</h4>
+                <!--Util para datos especificos-->
+                <input list="grado" name="selec cine">
+                <datalist id="grado">
+                    <option value="Sendero">
+                    <option value="Galerias Serdan">
+                    <option value="Lomas del Pedregal">
+                </datalist>
+                <h4>Elige tu cupón de descuento</h4>
+                <!--Util para datos especificos-->
+                <input list="combo" name="combo">
+                <datalist id="combo">
+                    <option value="Combo Palomitas">
+                    <option value="Combo dogos">
+                    <option value="Combo Frappes">
+                </datalist>
+            </div>
+    </form> 
+        </fieldset>
+    <h3>¿Cómo te gustaría que te contactáramos?</h3>
+    <form action="">
+        <label for="notificaciones">
+            <input type="checkbox" id="notificaciones" name="notificaciones">
+            Recibir notificaciones
+        </label>
+        <br>
+        <label for="recordatorios">
+            <input type="checkbox" id="recordatorios" name="recordatorios">
+            Si deseo activar los recordatorios
+        </label><br>
+        <label for="Publicidad">
+            <input type="checkbox" id="Publicidad" name="Publicidad">
+            Recibir publicidad
+        </label><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
