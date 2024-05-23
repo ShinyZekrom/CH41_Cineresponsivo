@@ -1,7 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Taxi Driver</title>
+<body class="grid-container">
+    <ul class="menu">
+        <li><a href="../index.html" target="_blank">Inicio</a></li>
+        <li><a href="../formulario.html" target="_blank">Regístrate</a></li>
+        <li><a href="../dulceria.html" target="_blank">Dulcería</a></li>
+      </ul>
+</head>
+<h1>Taxi Driver</h1>
+<img src="https://pics.filmaffinity.com/Taxi_Driver-173769074-mmed.jpg" width="400px" alt="Taxi Driver" class="imagen-movimiento">
+<h2>Sinopsis</h2>
+Para sobrellevar el insomnio crónico que sufre desde su regreso de Vietnam, Travis Bickle trabaja como taxista nocturno en Nueva York.
+<footer class="footer">
+<h2>Trailer</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/T5IligQP7Fo?si=O7ZIzxZqH_RQ8GtW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></footer>  
+</footer>  
+   <style>
+        .grid-container{
+            text-align: center;
+        }
+        .resumen{
+            text-align: justify;
+        }
+        .footer iframe{
+            width: 100%;
+            height: 500px;
+        }
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;  
+        }
+        .menu li {
+            float: left;
+        }
+        .menu li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 0px;
+            text-decoration: none;
+        }
+        .menu li a:hover {
+            background-color:darkcyan
+        }
         @keyframes mover{
             0% {left: 0;}
             100%{left: 200px;}
@@ -12,7 +60,6 @@
             animation: mover 5s infinite;
         } 
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
-
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 60px;
@@ -21,18 +68,5 @@ h1 {
   text-shadow: 2px 2px 4px #FF6347;
 }
     </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-    <title>Taxi Driver</title>
-</head>
-<body>
-    <h1>Taxi Driver</h1>
-    <img src="https://pics.filmaffinity.com/Taxi_Driver-173769074-mmed.jpg" width="400px" alt="Taxi Driver" class="imagen-movimiento">
-
-    <h2>Resumen</h2>
-    Para sobrellevar el insomnio crónico que sufre desde su regreso de Vietnam, Travis Bickle trabaja como taxista nocturno en Nueva York.
-<h2>Trailer</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/T5IligQP7Fo?si=DayJPGAsFu8bysKL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </body>
 </html>

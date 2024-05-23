@@ -1,7 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Pokemón 2000</title>
+<body class="grid-container">
+    <ul class="menu">
+        <li><a href="../index.html" target="_blank">Inicio</a></li>
+        <li><a href="../formulario.html" target="_blank">Regístrate</a></li>
+        <li><a href="../dulceria.html" target="_blank">Dulcería</a></li>
+      </ul>
+</head>
+    <h1>Pokemón 2000</h1>
+    <img src="https://imgs.search.brave.com/pZQPQT3HptOVm_1aPPEEdHMl7_Y9S0d25LPm8E79KkY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50aGVtb3ZpZWRi/Lm9yZy90L3AvdzMw/MF9hbmRfaDQ1MF9i/ZXN0djIvckJlaDEx/QUhSSXlRdzczOHBY/TG9KMnRMeHlOLmpw/Zw" width="400px" alt="Pokemón 2000" class="imagen-movimiento">
+    <h2>Sinopsis</h2>
+    En las Islas Naranja, muy al sur de Kanto, un coleccionista llamado Lawrence III tiene un siniestro objetivo: capturar a los legendarios Pokémon Articuno, Zapdos y Moltres para intentar despertar a Lugia, el gran guardián del agua.
+    <footer class="footer">
+    <h2>Trailer</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mw5ef0UPdv0?si=YWr8cbvO9fX7AbwZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</footer>  
     <style>
+        .grid-container{
+            text-align: center;
+        }
+        .resumen{
+            text-align: justify;
+        }
+        .footer iframe{
+            width: 100%;
+            height: 500px;
+        }
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;  
+        }
+        .menu li {
+            float: left;
+        }
+        .menu li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 0px;
+            text-decoration: none;
+        }
+        .menu li a:hover {
+            background-color:darkcyan
+        }
         @keyframes mover{
             0% {left: 0;}
             100%{left: 200px;}
@@ -12,7 +60,6 @@
             animation: mover 5s infinite;
         } 
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
-
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 60px;
@@ -21,18 +68,5 @@ h1 {
   text-shadow: 2px 2px 4px #FF6347;
 }
     </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-    <title>Pokemón 2000</title>
-</head>
-<body>
-    <h1>Jurassic World</h1>
-    <img src="https://imgs.search.brave.com/pZQPQT3HptOVm_1aPPEEdHMl7_Y9S0d25LPm8E79KkY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50aGVtb3ZpZWRi/Lm9yZy90L3AvdzMw/MF9hbmRfaDQ1MF9i/ZXN0djIvckJlaDEx/QUhSSXlRdzczOHBY/TG9KMnRMeHlOLmpw/Zw" width="400px" alt="Pokemón 2000" class="imagen-movimiento">
-
-    <h2>Resumen</h2>
-    En las Islas Naranja, muy al sur de Kanto, un coleccionista llamado Lawrence III tiene un siniestro objetivo: capturar a los legendarios Pokémon Articuno, Zapdos y Moltres para intentar despertar a Lugia, el gran guardián del agua.
-<h2>Trailer</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mw5ef0UPdv0?si=YWr8cbvO9fX7AbwZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </body>
 </html>
